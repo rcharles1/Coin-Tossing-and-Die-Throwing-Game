@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="D:\Academics Practicals\GamblingDj\gambler\static\cashout.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'cashout.css' %}">
+    <title>Cashout</title>
+</head>
+<body>
+    <div class="v4_19">
+        <span class="v4_20">GAMBLER</span>
+        <span class="v4_22">Congratulations, you won {{landing_side}} million!</span>
+        <div class="name"></div>
+        <div class="v4_24"></div>
+        <div class="v4_28">
+            <a href="{% url 'pay' %}" class="btnCashout">Cash Out</a>
+        </div>
+    </div>
+</body>
+</html>

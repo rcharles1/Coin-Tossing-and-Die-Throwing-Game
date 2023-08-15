@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v4_36 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v4_37 {
+  width: 374px;
+  color: rgba(249,121,46,1);
+  position: absolute;
+  top: 55px;
+  left: 533px;
+  font-family: Montserrat;
+  font-weight: Bold;
+  font-size: 64px;
+  opacity: 1;
+  text-align: center;
+}
+.v4_40 {
+  width: 100%;
+  background: url("../images/v4_40.png");
+  opacity: 1;
+  position: absolute;
+  top: 175px;
+  left: 142px;
+  border: 3px solid rgba(242,242,242,1);
+}
+.v4_43 {
+  width: 500px;
+  height: 500px;
+  background: url("../images/v4_43.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 176px;
+  left: 470px;
+  overflow: hidden;
+}
+.name {
+  color: #fff;
+}
+.v7_54 {
+  width: 377px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 235px;
+  left: 532px;
+  font-family: Montserrat;
+  font-weight: Regular;
+  font-size: 34px;
+  opacity: 1;
+  text-align: center;
+}
+.btnCash {
+    color: #ffffff;
+    background: rgba(249,121,46,1);
+    width: 150px;
+    position: absolute;
+    left: 650px;
+    top: 550px;
+    border-radius: 5px;
+    height: 35px;
+    font-size: medium;
+    font-style: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+}

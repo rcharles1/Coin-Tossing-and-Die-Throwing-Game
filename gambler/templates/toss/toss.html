@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="D:\Academics Practicals\GamblingDj\gambler\static\toss.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'toss.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Toss Coin</title>
+    <script>
+        function executeAfterGifLoaded() {
+     
+            setTimeout(function () {
+      
+                fetch('/gambler/')
+                    .then(function (response) {
+                        
+                        window.location.href = response.url;
+                    })
+                    .catch(function (error) {
+                        
+                    });
+            }, 3000); 
+        }
+    </script>
+</head>
+<body>
+    <div class="v2_57">
+        <span class="v2_58">Game 1</span>
+        <div class="v2_65">
+            
+        </div>
+        <span class="v2_68">Tossing a coin</span>
+        <div class="v4_9">
+
+            <!-- Include  GIF image for coin toss -->
+            <img src="{% static 'coin_toss.gif' %}" alt="Coin Toss" onload="executeAfterGifLoaded()">
+
+        </div>
+    </div>
+  
+
+</body>
+</html>

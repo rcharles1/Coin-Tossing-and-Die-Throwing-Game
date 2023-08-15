@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'pay.css' %}">
+    <link href="D:\Academics Practicals\GamblingDj\gambler\static\pay.css" rel="stylesheet" />
+    <title>In Game Payment</title>
+</head>
+<body>
+    <div class="v1_2">
+
+        <form action="" method="POST">
+
+            {% csrf_token %}
+
+            
+            <span class="v1_3">GAMBLER</span>
+            <div class="name">
+                {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-info alert-dissmissable">
+                    {{message}}
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+            <span class="v1_27">Pay 2 million to start game.</span>
+            <div class="inputBox">
+                <input type="number" name="amount" required="required">
+                <span>Amount</span>
+            </div>
+            <div class="v2_13">
+                <input type="submit" value="Make Payment" class="btnPay">
+            </div>
+
+        </form>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="D:\Academics Practicals\GamblingDj\gambler\static\dice.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'dice.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Throw Dice</title>
+
+    <script>
+        function executeAfterGifLoaded() {
+            
+            setTimeout(function () {
+                
+                fetch('/roll-die/')
+                    .then(function (response) {
+                        
+                        window.location.href = response.url;
+                    })
+                    .catch(function (error) {
+                        
+                    });
+            }, 8000);  
+        }
+    </script>
+
+</head>
+<body>
+    <div class="v4_12">
+        <span class="v4_13">Game 2</span>
+        <div class="v4_14"></div>
+        <span class="v4_15">Throw a Six-sided Die</span>
+        <div class="v4_18">
+            <!-- Include  GIF image -->
+            <img src="{% static 'roll_dice.gif' %}" alt="Throwing dice" onload="executeAfterGifLoaded()">
+        </div>
+    </div>
+
+   
+</body>
+</html>

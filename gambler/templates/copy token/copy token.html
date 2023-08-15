@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="D:\Academics Practicals\GamblingDj\gambler\static\copy token.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'copy token.css' %}">
+    <title>Copy Token</title>
+</head>
+<body>
+    <div class="v2_16">
+        <span class="v2_17">Your Token</span>
+        <span class="v2_19">Please, copy the token before you proceed.</span>
+
+    </div>
+    <div class="v2_21">
+        <span class="v2_25">{{token}}</span>
+    </div>
+    
+
+    <div class="v2_13">
+        <a href="{% url 'etoken' %}" class="btnPay">Proceed</a>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="D:\Academics Practicals\GamblingDj\gambler\static\enter token.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'enter token.css' %}">
+    <title>Enter Token</title>
+</head>
+<body>
+
+    <form action="" method="POST">
+
+        {% csrf_token %}
+
+        {% if messages %}
+        {% for message in messages %}
+
+        <div class="alert alert-info alert-dissmissable">
+            {{message}}
+        </div>
+
+        {% endfor %}
+        {% endif %}
+
+        <div class="v2_33">
+            <span class="v2_34">Enter Your Token</span>
+            <span class="v2_35">Please, enter the token you were provided to proceed.</span>
+
+            <div class="inputBox">
+                <input type="text" name="user_tkn" required="required">
+                <span>Token</span>
+            </div>
+
+            <div class="v2_41"></div>
+            <div class="v2_13">
+                <input type="submit" value="Proceed" class="btnPay">
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
